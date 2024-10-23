@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="аренда автомобилей, аренда транспорта, автомобиль напрокат, арендовать машину"
+    />
+    <meta
+      name="description"
+      content="Добро пожаловать на сайт нашей компании по аренде автомобилей! Мы предлагаем широкий выбор автомобилей напрокат, от экономичных до роскошных. Нужна ли вам краткосрочная аренда или долгосрочная аренда, у нас всегда есть гибкие варианты, которые подойдут под ваши потребности. Наши услуги по аренде автомобилей доступны по конкурентоспособным ценам с регулярными предложениями и скидками. Сравните наши цены на прокат автомобилей и найдите идеальный автомобиль для вашего путешествия. Безопасных поездок!"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>AutoRent: Аренда автомобилей</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header">
+          <img class="header__logo" src="img/logo.png" alt="Voyage Vehicles" />
+          <h1 class="header__slogan text--uppercase">Drive your dream</h1>
+          <a class="header__phone" href="tel:+74956661337">+7 495 666-13-37</a>
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#about_us" class="nav-list__button">О нас</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#services" class="nav-list__button">Услуги</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#offers" class="nav-list__button">Предложения</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#loyalty" class="nav-list__button"
+                >Лояльность</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-list__item nav-list__item--right"
+                >Забронировать</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h2>Спецпредложения</h2>
+          <div class="section-container">
+            <div class="special-offer-list">
+              <div class="special-offer-column special-offer-column--left">
+                <div class="special-offer-card special-offer-card--first">
+                  <h3 class="special-offer-card__name">BMW 218i</h3>
+                  <div class="special-offer-card__price">
+                    от <del class="text--crossed">4500₽</del>
+                    <ins class="text--underline text--gold">(3500₽)</ins> / день
+                  </div>
+                </div>
+                <div class="special-offer-card special-offer-card--second">
+                  <h3 class="special-offer-card__name">Mercedes Benz E200</h3>
+                  <div class="special-offer-card__price">
+                    от <del class="text--crossed">4200₽</del>
+                    <ins class="text--underline text--gold">(3200₽)</ins> / день
+                  </div>
+                </div>
+              </div>
+              <div class="special-offer-column">
+                <div class="special-offer-card special-offer-card--third">
+                  <h3 class="special-offer-card__name">
+                    Tesla Model Y Perfomance
+                  </h3>
+                  <div
+                    class="special-offer-card__price special-offer-card__price--third"
+                  >
+                    от <del class="text--crossed">12500₽</del>
+                    <ins class="text--underline text--gold">(9900₽)</ins> / день
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 id="about_us">О нас</h2>
+          <div class="section-container">
+            <p class="about-us__text">
+              Добро пожаловать на сайт нашей компании по аренде автомобилей! Мы
+              предлагаем широкий выбор автомобилей напрокат, от экономичных до
+              роскошных. Нужна ли вам краткосрочная аренда или долгосрочная
+              аренда, у нас всегда есть гибкие варианты, которые подойдут под
+              ваши потребности. Наши услуги по аренде автомобилей доступны по
+              конкурентоспособным ценам с регулярными предложениями и скидками.
+              Сравните наши цены на прокат автомобилей и найдите идеальный
+              автомобиль для вашего путешествия. Безопасных поездок!
+            </p>
+          </div>
+        </section>
+        <section>
+          <h2 id="services">Услуги</h2>
+          <div class="section-container">
+            <ul class="service-list">
+              <li class="service-card">
+                <div class="service-card__img service-card__img--first"></div>
+                <div class="service-card__content">
+                  <h3 class="service-card__name text--gold">
+                    Доставка и забор автомобиля
+                  </h3>
+                  <p class="service-card__description">
+                    Услуга доставки арендованного автомобиля к месту нахождения
+                    клиента и забора его по окончании аренды.
+                  </p>
+                </div>
+              </li>
+              <li class="service-card">
+                <div class="service-card__img service-card__img--second"></div>
+                <div class="service-card__content">
+                  <h3 class="service-card__name text--gold">
+                    Страхование без франшизы
+                  </h3>
+                  <p class="service-card__description">
+                    Полное страхование автомобиля без франшизы, что означает,
+                    что клиент не будет нести никаких расходов в случае
+                    повреждения или угона автомобиля.
+                  </p>
+                </div>
+              </li>
+              <li class="service-card">
+                <div class="service-card__img service-card__img--third"></div>
+                <div class="service-card__content">
+                  <h3 class="service-card__name text--gold">
+                    Программа лояльности и скидки
+                  </h3>
+                  <p class="service-card__description">
+                    Программа лояльности для постоянных клиентов, включающая
+                    скидки на последующие аренды, бонусные баллы и специальные
+                    предложения.
+                  </p>
+                </div>
+              </li>
+              <li class="service-card">
+                <div class="service-card__img service-card__img--fourth"></div>
+                <div class="service-card__content">
+                  <h3 class="service-card__name text--gold">
+                    Экологические автомобили
+                  </h3>
+                  <p class="service-card__description">
+                    Аренда электрических и гибридных автомобилей, а также
+                    предоставление зарядных станций и информации о ближайших
+                    точках зарядки.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2 id="offers">Предложения</h2>
+          <div class="section-container">
+            <ul class="offer-list">
+              <li class="offer-card">
+                <img
+                  src="img/cars/geely_coolray_2024.png"
+                  class="offer-card__img"
+                />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Geely Coolray 2024</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2600₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/exeed_lx.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Exeed LX</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2850₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/changan_unit.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Changan UNI-T</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2950₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/jac_js6.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">JAC JS6</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2550₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/omoda_c5_joy.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">OMODA C5 Joy</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2500₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/belgee_x50.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Belgee X50</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2350₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/omoda_s5.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">OMODA S5 Life</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2100₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img
+                  src="img/cars/chery_arrizo_8.png"
+                  class="offer-card__img"
+                />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Chery Arrizo 8</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2800₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/changan_univ.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Changan UNI-V</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">2850₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/haval_h3_tech.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Haval H3 Tech+</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">3000₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card">
+                <img src="img/cars/vw_id4.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">VW ID.4 Crozz Lite Pro</h3>
+                  <span class="offer-card__price"
+                    >от <b class="text--gold">5100₽</b> / день</span
+                  >
+                </div>
+              </li>
+              <li class="offer-card offer-card--last">
+                <img src="img/cars/more_car.png" class="offer-card__img" />
+                <div class="offer-card__description">
+                  <h3 class="offer-card__name">Смотреть ещё</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="loyalty-section">
+          <h2 id="loyalty">Программа лояльности</h2>
+          <div class="loyalty-table">
+            <div class="loyalty-table__row loyalty-table__row--header">
+              <div class="loyalty-table__cell">Уровни</div>
+              <div class="loyalty-table__cell">Автолюбитель</div>
+              <div class="loyalty-table__cell">Заводила</div>
+              <div class="loyalty-table__cell">Энтузиаст</div>
+              <div class="loyalty-table__cell">Человек-машина</div>
+              <div class="loyalty-table__cell">Звезда дороги</div>
+            </div>
+            <div class="loyalty-table__row">
+              <div class="loyalty-table__cell">Сколько км надо проехать</div>
+              <div class="loyalty-table__cell">0</div>
+              <div class="loyalty-table__cell">200</div>
+              <div class="loyalty-table__cell">800</div>
+              <div class="loyalty-table__cell">2000</div>
+              <div class="loyalty-table__cell">4000</div>
+            </div>
+            <div class="loyalty-table__row">
+              <div class="loyalty-table__cell">Кэшбэк за поездки</div>
+              <div class="loyalty-table__cell">3%</div>
+              <div class="loyalty-table__cell">5%</div>
+              <div class="loyalty-table__cell">7%</div>
+              <div class="loyalty-table__cell">10%</div>
+              <div class="loyalty-table__cell">15%</div>
+            </div>
+            <div class="loyalty-table__row">
+              <div class="loyalty-table__cell">Оплата драйв-бонусами</div>
+              <div class="loyalty-table__cell">до 25%</div>
+              <div class="loyalty-table__cell">до 30%</div>
+              <div class="loyalty-table__cell">до 40%</div>
+              <div class="loyalty-table__cell">до 50%</div>
+              <div class="loyalty-table__cell">до 60%</div>
+            </div>
+            <div class="loyalty-table__row">
+              <div class="loyalty-table__cell">Каско</div>
+              <div class="loyalty-table__cell">✖</div>
+              <div class="loyalty-table__cell">✖</div>
+              <div class="loyalty-table__cell">✖</div>
+              <div class="loyalty-table__cell">✔</div>
+              <div class="loyalty-table__cell">✔</div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <h2 class="footer__name">Контакты</h2>
+        <div class="section-container">
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              Телефон: <a href="tel:+74956661337">+7 495 666-13-37</a>
+            </li>
+            <li class="contact-list__item">Адрес: Кронверкский проспект, 49</li>
+            <li class="contact-list__item">Часы работы: 8:00 - 21:00</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
