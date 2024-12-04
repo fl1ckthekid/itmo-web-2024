@@ -1,0 +1,575 @@
+@font-face {
+  font-family: "muller";
+  src: url("../font/muller.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "muller", sans-serif;
+  line-height: 1;
+  color: #ffffff;
+}
+
+body {
+  background-color: #292929;
+}
+
+main {
+  margin-bottom: 200px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 4px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+header {
+  margin-bottom: 70px;
+}
+
+/* Containers */
+
+.page-container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+
+.section-container {
+  padding-left: 40px;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 30%;
+  margin-right: 50px;
+}
+
+.header__slogan {
+  display: inline-block;
+  margin-right: 50px;
+  letter-spacing: 7px;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header__phone {
+  display: inline-block;
+  font-size: 26px;
+}
+
+.nav-bar {
+  display: block;
+  width: 100%;
+  min-height: 70px;
+  padding: 15px 50px;
+  background-color: #353535;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list__item {
+  display: inline-block;
+  color: #cc9933;
+  background-color: #353535;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 950px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-list__item {
+    margin-bottom: 15px;
+  }
+
+  .nav-bar {
+    width: 50%;
+    margin: 0 auto 0;
+  }
+}
+
+.nav-list__button {
+  display: block;
+  padding: 15px 25px;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+}
+
+.nav-list__button--right {
+  padding: 15px 30px;
+  color: white;
+  background-color: #cc9933;
+  border-radius: 12px;
+}
+
+.nav-list__button--hover {
+  transform: scale(1.05);
+  background-color: #505050;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+}
+
+.nav-list__button--active {
+  transform: translateY(2px);
+  background-color: #707070;
+}
+
+.nav-list__button--current {
+  background-color: #505050;
+  border: 1px solid #cc9933;
+}
+
+/* Special offers section */
+
+.special-offer-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.special-offer-column {
+  width: 48%;
+}
+
+.special-offer-column--left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.special-offer-card {
+  width: 100%;
+  height: 260px;
+  padding: 50px 0 0 45px;
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.special-offer-card--first {
+  background: linear-gradient(
+      90deg,
+      rgba(50, 50, 50, 0.8) 30%,
+      rgba(50, 50, 50, 0) 70%
+    ),
+    url(../img/offers/bmw_218i.jpg);
+  background-size: cover;
+}
+
+.special-offer-card--second {
+  background: linear-gradient(
+      90deg,
+      rgba(50, 50, 50, 0.8) 30%,
+      rgba(50, 50, 50, 0) 70%
+    ),
+    url(../img/offers/benz_e200.jpg);
+  background-size: cover;
+}
+
+.special-offer-card--third {
+  height: 545px;
+  padding-top: 80px;
+  background: linear-gradient(
+      90deg,
+      rgba(50, 50, 50, 0.8) 35%,
+      rgba(50, 50, 50, 0) 65%
+    ),
+    url(../img/offers/tesla_model_y.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 670px) {
+  .special-offer-card--third {
+    height: 260px;
+  }
+}
+
+.offer-heading {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 420px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.offer-heading-3 {
+  width: 300px;
+  height: 180px;
+  font-size: 60px;
+}
+
+.special-offer-card__price {
+  margin-bottom: 47px;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.offer-more-button {
+  height: 20px;
+  padding-right: 15px;
+  font-size: 16px;
+  color: #f0bf5f;
+  background-image: url(../img/tick.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* About us section */
+
+.about-us__text {
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+
+/* Services section */
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  display: inline-block;
+  width: 530px;
+  height: 500px;
+  margin: 0 24px 24px 0;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.service-card__img {
+  height: 50%;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.service-card__img--first {
+  background-image: url(../img/services/service1.jpg);
+}
+
+.service-card__img--second {
+  background-image: url(../img/services/service2.jpg);
+}
+
+.service-card__img--third {
+  background-image: url(../img/services/service3.jpg);
+}
+
+.service-card__img--fourth {
+  background-image: url(../img/services/service4.jpg);
+}
+
+.service-card__content {
+  height: 50%;
+  padding: 25px 0 0 45px;
+  background-color: #353535;
+  border-radius: 0 0 15px 15px;
+}
+
+.service-card__name {
+  margin-bottom: 20px;
+}
+
+.service-card__description {
+  width: 400px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+/* Offers section */
+
+.offer-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  width: 330px;
+  margin: 0 12px 24px;
+  background-color: #353535;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.offer-card--last {
+  background: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 0.84) -3%,
+    rgba(53, 65, 83, 0) 60%
+  );
+  background-size: contain;
+}
+
+.offer-card__img {
+  margin-top: 20px;
+}
+
+.offer-card__description {
+  width: 100%;
+  padding: 25px 0 45px 40px;
+}
+
+.offer-card__name {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.offer-card__price {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Loyalty section */
+
+.loyalty-table {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.loyalty-table__row {
+  display: contents;
+}
+
+.loyalty-table__row--header {
+  font-weight: bold;
+}
+
+.loyalty-table__cell {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #cc9933;
+}
+
+.loyalty-table__row:nth-child(even) .loyalty-table__cell {
+  background-color: #292929;
+}
+
+.loyalty-table__row:nth-child(odd) .loyalty-table__cell {
+  background-color: #353535;
+}
+
+@media screen and (max-width: 630px) {
+  .loyalty-section {
+    display: none;
+  }
+}
+
+/* Wishlist section */
+
+.wishlist-form {
+  display: flex;
+  max-width: 50%;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.wishlist-form__input {
+  flex: 1 1 auto;
+  padding: 10px;
+  background-color: #454545;
+  border: 1px solid #cc9933;
+  border-radius: 5px;
+}
+
+.wishlist-form__button {
+  padding: 15px 30px;
+  color: white;
+  background-color: #cc9933;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+}
+
+.wishlist-form__button:hover {
+  background-color: #505050;
+  border-color: #cc9933;
+}
+
+.wishlist-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  gap: 10px;
+}
+
+.wishlist-form__car {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #353535;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+}
+
+.wishlist-form__car:hover {
+  transform: translateY(-2px);
+}
+
+.wishlist-form__button--delete {
+  padding: 7px 15px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 14px;
+  border-style: none;
+  border-radius: 7px;
+}
+
+.wishlist-form__button--delete:hover {
+  background-color: #c0392b;
+}
+
+/* Contacts section */
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #292929;
+}
+
+.footer__name {
+  margin-top: 15px;
+}
+
+.contact-list {
+  margin-bottom: 20px;
+}
+
+.contact-list__item {
+  display: inline-block;
+  margin: 0 50px 10px 0;
+}
+
+.load-time-text {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Reviews section */
+
+.reviews__preloader {
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  border: 5px solid lightgrey;
+  border-top: 5px solid #cc9933;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews__item {
+  padding: 15px 20px;
+  background-color: #353535;
+  border: 2px solid #404040;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reviews__name {
+  color: #cc9933;
+  margin: 15px 0px;
+}
+
+.reviews__body {
+  margin: 15px 0px;
+}
+
+.reviews__email {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.reviews__error {
+  text-align: center;
+  color: red;
+}
+
+/* Other */
+
+.text--gold {
+  color: #cc9933;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--crossed {
+  text-decoration: line-through;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
